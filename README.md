@@ -31,7 +31,7 @@ Windows側では次のリポジトリをクローンしておく。
 
 - [win_rosclient_sample](https://github.com/KMiyawaki/win_rosclient_sample.git)
 
-クローンした`win_rosclient_sample/win_rosclient_sample_01.py`を実行し、Windowsターミナルから`forward`、`back`、`left`、`right`などとコマンドを送るとロボットが動く。それ以外の文字列の場合は停止する。
+クローンした`win_rosclient_sample/control_ros_sample_02.py`を実行し、Windowsターミナルから`forward`、`back`、`left`、`right`などとコマンドを送るとロボットが動く。それ以外の文字列の場合は停止する。
 
 ### ハンドジェスチャーでロボットをコントロールする
 
