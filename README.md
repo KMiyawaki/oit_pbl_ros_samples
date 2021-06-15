@@ -31,7 +31,7 @@ Windows側では次のリポジトリをクローンしておく。
 
 - [win_rosclient_sample](https://github.com/KMiyawaki/win_rosclient_sample.git)
 
-クローンした`win_rosclient_sample/control_ros_sample_02.py`を実行し、Windowsターミナルから`forward`、`back`、`left`、`right`などとコマンドを送るとロボットが動く。それ以外の文字列の場合は停止する。
+クローンした`win_rosclient_sample/control_ros_sample_01.py`を実行し、Windowsターミナルから`forward`、`back`、`left`、`right`などとコマンドを送るとロボットが動く。それ以外の文字列の場合は停止する。
 
 ### ハンドジェスチャーでロボットをコントロールする
 
@@ -41,7 +41,7 @@ Windows側では次のリポジトリをクローンしておく。
 rosrun oit_pbl_ros_samples control_from_win_sample_01.py
 ```
 
-Windows側は`win_rosclient_sample/win_rosclient_sample_02.py`を実行し、カメラの前に手をかざすとロボットが動く。画面上での手の位置に対応して、`forward`、`back`、`left`、`right`などのコマンドが送信されている。
+Windows側は`win_rosclient_sample/control_ros_sample_02.py`を実行し、カメラの前に手をかざすとロボットが動く。画面上での手の位置に対応して、`forward`、`back`、`left`、`right`などのコマンドが送信されている。
 
 ### Windowsプログラムとメッセージを送受信する
 
