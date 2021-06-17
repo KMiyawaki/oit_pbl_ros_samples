@@ -28,7 +28,7 @@ class CommunicationWithWinSampleNode(object):
         self.twist.angular.y = 0.0
         self.twist.angular.z = 0.0
 
-    def main(self):
+    def process(self):
         sleep_time = 1
         node_name = rospy.get_name()
         ac = actionlib.SimpleActionClient(self.move_base_name, MoveBaseAction)
@@ -64,7 +64,7 @@ def main():
         "/from_windows", "/from_ros", "/cmd_vel")
     rospy.loginfo("%s:Started", rospy.get_name())
 
-    node.main()
+    node.process()
     rospy.loginfo("%s:Exiting", rospy.get_name())
 
 

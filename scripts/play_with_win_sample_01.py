@@ -99,7 +99,7 @@ class PlayWithWinSampleNode(object):
         rospy.sleep(1)
         return self.show_face(message_from_win)
 
-    def main(self):
+    def process(self):
         node_name = rospy.get_name()
         ac = actionlib.SimpleActionClient(self.move_base_name, MoveBaseAction)
         # Waiting action server for navigation
@@ -136,7 +136,7 @@ def main():
         ], "/robot_face_type")
     rospy.loginfo("%s:Started", rospy.get_name())
 
-    node.main()
+    node.process()
     rospy.loginfo("%s:Exiting", rospy.get_name())
 
 
